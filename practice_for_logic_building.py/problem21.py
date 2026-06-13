@@ -11,6 +11,6 @@ last = num % 10
 if first == last:
     print("The first and last digits are equal.")
 
-    
+
 else:
     print("The first and last digits are not equal.")
