@@ -5,12 +5,19 @@
 #solution
 
 def check_number(num):  # create a function with parameter num 
-    if num>0:
+
+    if num>0:            # check condition num grater zero              
         print(num,"is a positive number")
-    elif num<0:
+
+
+    elif num<0:           # check condition num less than zero 
         print(num,"is a negative number")
+
+
     else:
         print(num,"is zero")
+
+        
 
 check_number(6)
 check_number(-8)
