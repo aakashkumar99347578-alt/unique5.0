@@ -1,4 +1,4 @@
-# problem statment Input n and take n integers into an array; print them.
+# problem statment:- Input n and take n integers into an array; print them.
 
 
 #solution
