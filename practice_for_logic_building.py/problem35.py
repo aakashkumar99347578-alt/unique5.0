@@ -1,4 +1,4 @@
-# problem statment :-  Print the squares of numbers from 1 to n. and Print cubes of numbers from 1 to n
+# problem statment :-   Print the squares of numbers from 1 to n. and Print cubes of numbers from 1 to n
 
 
 #solution
