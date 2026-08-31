@@ -52,3 +52,12 @@ print(merge_dataframe.groupby(['item_id','item_name'])['item_price_in_rupees'].s
 
 print("------------------------------Questions - 5 --------------------------------------------")
 print(ipl_match.merge(ipl_ball_by_ball_deliveries,on='ID').dropna(subset='player_out').groupby(['Season','bowler'])['isWicketDelivery'].sum().reset_index().sort_values(['Season','isWicketDelivery'],ascending=[True,False]).drop_duplicates(subset='Season',keep='first'))
+
+# Q-6 :  Best bowler in death overs. Note: Have taken most no of wickets in case of tie with least econom
+
+print("-----------------------------Queations -6----------------------------------------------------")
+temp = ipl_match.merge(ipl_ball_by_ball_deliveries,on='ID')
+print(temp[(temp['SuperOver'] != 'N') & (temp['overs'] >= 16) & (temp['overs'] <= 20)].dropna(subset='player_out').groupby(['Season','bowler'])['isWicketDelivery'].sum().reset_index().sort_values(['Season','isWicketDelivery'],ascending=[True,False]).drop_duplicates(subset='Season',keep='first'))
+
+# Q -8 : Batsman record season wise Make a function which takes a input batsman_name and it returns a dataframe. Columns of the data frame are - ['Season','Innings', 'TotalRuns', 'Avg', 'HighestScore','StrikeRate'].
+
