@@ -66,3 +66,20 @@ def expeness(arr):
 
 print( "total expences and maximum expences  ",expeness([12,0,13,14,45,57]))
 
+
+# in array when find the target element then return first occurence 
+
+size = int(input("enter the size of array"))
+l=[]
+for i in range(1,size+1):
+    number = int(input(f"enter the number at index {i} "))
+    l.append(number)
+target = int(input(" enter the target element "))
+
+def first_occurenese(array,targget):
+    for i in range(len(array)):
+        if array[i]==targget:
+            return i
+
+print("first occurenese" , first_occurenese(l,target))
+
