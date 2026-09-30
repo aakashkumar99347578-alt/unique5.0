@@ -50,3 +50,19 @@ for i in range(size):
 
 target = int(input("enter the target element"))
 all()
+
+
+# create a an array and take the number and caluclate total expences and maximum expences 
+
+def expeness(arr):
+    maximum_expenss = arr[0]
+    total_expences = 0
+    for i in arr:
+        total_expences+=i
+        if maximum_expenss<i:
+            maximum_expenss = i
+    return total_expences,maximum_expenss
+    
+
+print( "total expences and maximum expences  ",expeness([12,0,13,14,45,57]))
+
