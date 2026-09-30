@@ -103,3 +103,4 @@ def first_occurenese(array,targget):
 
 print("first occurenese" , first_occurenese(l,target))
 
+
