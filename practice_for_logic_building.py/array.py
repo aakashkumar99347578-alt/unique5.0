@@ -83,3 +83,23 @@ def first_occurenese(array,targget):
 
 print("first occurenese" , first_occurenese(l,target))
 
+
+
+#  in array when find the target elment then return last occurences other wise return -1
+
+l=[]
+for i in range(1,size+1):
+    number = int(input(f"enter the number at index {i} "))
+    l.append(number)
+target = int(input(" enter the target element "))
+
+def first_occurenese(array,targget):
+    last = -1
+    for i in range(len(array)):
+        if array[i]==targget:
+            last = i
+    return last
+            
+
+print("first occurenese" , first_occurenese(l,target))
+
