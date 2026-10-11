@@ -15,7 +15,7 @@
 
  """
 
-def transpose(matrix):
+""" def transpose(matrix):
     rows = len(matrix)
     cols = len(matrix[0])
     result = [[0]*rows for _ in range(cols)]
@@ -23,6 +23,25 @@ def transpose(matrix):
         for j in range(cols):
             result[j][i]=matrix[i][j]
     return result
+ """
+def upper_triangle(matrix):
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            if j>=i:
+                print(matrix[i][j],end=" ")
+            else:
+                print("*",end=" ")
+        print()
+
+def lower_triangle(matrix):
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            if j<=i:
+                print(matrix[i][j],end=" ")
+            else:
+                print("*",end=" ")
+        print()
+
 
 
 
@@ -39,4 +58,6 @@ for i in range(row):
 print(matrix)
 """ traverse(matrix) """
 """ print(transpose_squre(matrix)) """
-print(transpose(matrix))
+""" print(transpose(matrix)) """
+upper_triangle(matrix)
+lower_triangle(matrix)
