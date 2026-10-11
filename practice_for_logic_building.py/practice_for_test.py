@@ -15,6 +15,14 @@
 
  """
 
+def transpose(matrix):
+    rows = len(matrix)
+    cols = len(matrix[0])
+    result = [[0]*rows for _ in range(cols)]
+    for i in range(rows):
+        for j in range(cols):
+            result[j][i]=matrix[i][j]
+    return result
 
 
 
@@ -28,7 +36,7 @@ for i in range(row):
         rows.append(value)
     matrix.append(rows)
 
-""" print(matrix) """
+print(matrix)
 """ traverse(matrix) """
 """ print(transpose_squre(matrix)) """
-
+print(transpose(matrix))
