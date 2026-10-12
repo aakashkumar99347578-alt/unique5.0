@@ -7,3 +7,12 @@ def vowel(strings):
         if i in "aeiou":
             print(i)
 vowel("aakash")
+
+
+def stringpalindrome(strings):
+    if strings==strings[ : :-1]:
+        print(strings,"is a palindrome stings")
+    else:
+        print(strings,"is a not palindrome strings")
+
+stringpalindrome("jpk")
