@@ -75,13 +75,13 @@ for i in range(size):
     for i in range(len(matrix)):
         print(matrix[i][len(matrix)-1-i],end=" ") """
 
-def symmmetric(matrix):
+""" def symmmetric(matrix):
     for i in range(len(matrix)):
         for j in range(len(matrix)):
             if matrix[i][j]!= matrix[j][i]:
                 return False
     return True
-
+ """
 
 row = int(input("enter the row number"))
 col = int(input("enter the coloumn number"))
@@ -141,4 +141,6 @@ print(countsced([10,20,15,18,16,17,12,11]))
 
 print(shift([10,20,30,40,50]))
  """
-print(symmmetric(matrix))
+""" print(symmmetric(matrix))
+ """
+
