@@ -73,7 +73,14 @@ for i in range(size):
 
 """ def second_diagonal(matrix):
     for i in range(len(matrix)):
-        print(matrix[i][len(matrix)-1-i],end=" ")
+        print(matrix[i][len(matrix)-1-i],end=" ") """
+
+def symmmetric(matrix):
+    for i in range(len(matrix)):
+        for j in range(len(matrix)):
+            if matrix[i][j]!= matrix[j][i]:
+                return False
+    return True
 
 
 row = int(input("enter the row number"))
@@ -86,7 +93,7 @@ for i in range(row):
         rows.append(value)
     matrix.append(rows)
 
-print(matrix) """
+print(matrix)
 """ traverse(matrix) """
 """ print(transpose_squre(matrix)) """
 """ print(transpose(matrix)) """
@@ -124,7 +131,7 @@ print(getunsorted([10,20,30,40,50,49,70]))
 print(countsced([10,20,15,18,16,17,12,11]))
  """
 
-def shift(matrix):
+""" def shift(matrix):
     for i in range(len(matrix)-1):
         temp = matrix[i]
         matrix[i] = matrix[i+1]
@@ -133,5 +140,5 @@ def shift(matrix):
     return matrix
 
 print(shift([10,20,30,40,50]))
-
-
+ """
+print(symmmetric(matrix))
