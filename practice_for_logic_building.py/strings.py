@@ -24,3 +24,27 @@ stringpalindrome("jpk")
         print(strings[i: : ])
     return count
 print(substring("ravi")) """
+
+""" def substring(strings):
+    count = 0
+    for i in range(len(strings)):
+        for j in range(i,len(strings)):
+            count+=1
+            print(strings[i : : ])
+    return count
+print(substring("ravi")) """
+
+integer = int(input("enter the number"))
+print(type(integer))
+string = str(integer)
+print(string)
+print(type(string))
+
+sum = 0
+for i in range(len(string)):
+    sub = string[i]
+    sum+=int(sub)
+    for j in range(i+1,len(string)):
+        sub = sub+string[j]
+        sum+=int(sub)
+print(sum)
