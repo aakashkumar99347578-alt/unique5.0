@@ -63,3 +63,13 @@ print(reverse_word(strings)) """
     reverse = word[::-1]
     return " ".join(reverses[::-1] for reverses in reverse)
 print(reverse_each_word(strings)) """
+
+def count_frequency(strings):
+    frequency = dict()
+    for i in strings:
+        if i in frequency:
+            frequency[i]+=1
+        else :
+            frequency[i]=1
+    return frequency
+print(count_frequency(strings))
