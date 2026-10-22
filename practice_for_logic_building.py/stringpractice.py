@@ -51,18 +51,18 @@ print(spacecount(strings)) """
 print(specail_charaters(strings))
  """
 
-""" def reverse_word(strings):
+def reverse_word(strings):
     word = strings.split()
     return word[: :-1]
     
-print(reverse_word(strings)) """
+print(reverse_word(strings))
 
 
-""" def reverse_each_word(strings):
+def reverse_each_word(strings):
     word = strings.split()
     reverse = word[::-1]
     return " ".join(reverses[::-1] for reverses in reverse)
-print(reverse_each_word(strings)) """
+print(reverse_each_word(strings))
 
 def count_frequency(strings):
     frequency = dict()

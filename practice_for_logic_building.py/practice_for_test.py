@@ -83,7 +83,7 @@ for i in range(size):
     return True
  """
 
-row = int(input("enter the row number"))
+""" row = int(input("enter the row number"))
 col = int(input("enter the coloumn number"))
 matrix = []
 for i in range(row):
@@ -93,7 +93,7 @@ for i in range(row):
         rows.append(value)
     matrix.append(rows)
 
-print(matrix)
+print(matrix) """
 """ traverse(matrix) """
 """ print(transpose_squre(matrix)) """
 """ print(transpose(matrix)) """
@@ -139,8 +139,8 @@ print(countsced([10,20,15,18,16,17,12,11]))
 
     return matrix
 
-print(shift([10,20,30,40,50]))
- """
+print(shift([10,20,30,40,50])) """
+
 """ print(symmmetric(matrix))
  """
 
